@@ -1,0 +1,2 @@
+C:\Users\lewis\Desktop\Projects\Twitch\bot_cati\obj\x86\Debug\bot_cati.vbproj.AssemblyReference.cache
+C:\Users\lewis\Desktop\Projects\Twitch\bot_cati\obj\x86\Debug\bot_cati.vbproj.CoreCompileInputs.cache

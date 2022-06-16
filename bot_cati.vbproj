@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1332BC3D-4371-485C-A5A1-42F578254515}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>bot_cati</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bot_cati_code.js" />
+    <Content Include="node_modules\data-uri-to-buffer\dist\index.js" />
+    <Content Include="node_modules\data-uri-to-buffer\dist\src\index.js" />
+    <Content Include="node_modules\data-uri-to-buffer\dist\test\test.js" />
+    <Content Include="node_modules\fetch-blob\file.js" />
+    <Content Include="node_modules\fetch-blob\from.js" />
+    <Content Include="node_modules\fetch-blob\index.js" />
+    <Content Include="node_modules\formdata-polyfill\esm.min.js" />
+    <Content Include="node_modules\formdata-polyfill\formdata-to-blob.js" />
+    <Content Include="node_modules\formdata-polyfill\FormData.js" />
+    <Content Include="node_modules\formdata-polyfill\formdata.min.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527203842.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527203947.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527204259.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527204418.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527204756.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527204833.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527211208.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527211248.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527212722.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527212731.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527212746.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527212900.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527213022.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527213822.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527213843.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527213852.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527213910.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527214034.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527214643.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527214654.js" />
+    <Content Include="node_modules\node-domexception\.history\index_20210527214700.js" />
+    <Content Include="node_modules\node-domexception\.history\test_20210527205603.js" />
+    <Content Include="node_modules\node-domexception\.history\test_20210527205957.js" />
+    <Content Include="node_modules\node-domexception\.history\test_20210527210021.js" />
+    <Content Include="node_modules\node-domexception\index.js" />
+    <Content Include="node_modules\node-fetch\src\body.js" />
+    <Content Include="node_modules\node-fetch\src\errors\abort-error.js" />
+    <Content Include="node_modules\node-fetch\src\errors\base.js" />
+    <Content Include="node_modules\node-fetch\src\errors\fetch-error.js" />
+    <Content Include="node_modules\node-fetch\src\headers.js" />
+    <Content Include="node_modules\node-fetch\src\index.js" />
+    <Content Include="node_modules\node-fetch\src\request.js" />
+    <Content Include="node_modules\node-fetch\src\response.js" />
+    <Content Include="node_modules\node-fetch\src\utils\get-search.js" />
+    <Content Include="node_modules\node-fetch\src\utils\is-redirect.js" />
+    <Content Include="node_modules\node-fetch\src\utils\is.js" />
+    <Content Include="node_modules\node-fetch\src\utils\multipart-parser.js" />
+    <Content Include="node_modules\node-fetch\src\utils\referrer.js" />
+    <Content Include="node_modules\tmi.js\index.js" />
+    <Content Include="node_modules\tmi.js\lib\api.js" />
+    <Content Include="node_modules\tmi.js\lib\client.js" />
+    <Content Include="node_modules\tmi.js\lib\commands.js" />
+    <Content Include="node_modules\tmi.js\lib\events.js" />
+    <Content Include="node_modules\tmi.js\lib\logger.js" />
+    <Content Include="node_modules\tmi.js\lib\parser.js" />
+    <Content Include="node_modules\tmi.js\lib\timer.js" />
+    <Content Include="node_modules\tmi.js\lib\utils.js" />
+    <Content Include="node_modules\tmi.js\node_modules\node-fetch\browser.js" />
+    <Content Include="node_modules\tmi.js\node_modules\node-fetch\lib\index.es.js" />
+    <Content Include="node_modules\tmi.js\node_modules\node-fetch\lib\index.js" />
+    <Content Include="node_modules\tr46\index.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\polyfill.es2018.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\polyfill.es2018.min.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\polyfill.es6.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\polyfill.es6.min.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\polyfill.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\polyfill.min.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\ponyfill.es2018.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\ponyfill.es6.js" />
+    <Content Include="node_modules\web-streams-polyfill\dist\ponyfill.js" />
+    <Content Include="node_modules\webidl-conversions\lib\index.js" />
+    <Content Include="node_modules\whatwg-url\lib\public-api.js" />
+    <Content Include="node_modules\whatwg-url\lib\URL-impl.js" />
+    <Content Include="node_modules\whatwg-url\lib\url-state-machine.js" />
+    <Content Include="node_modules\whatwg-url\lib\URL.js" />
+    <Content Include="node_modules\whatwg-url\lib\utils.js" />
+    <Content Include="node_modules\whatwg-url\LICENSE.txt" />
+    <Content Include="node_modules\ws\browser.js" />
+    <Content Include="node_modules\ws\index.js" />
+    <Content Include="node_modules\ws\lib\buffer-util.js" />
+    <Content Include="node_modules\ws\lib\constants.js" />
+    <Content Include="node_modules\ws\lib\event-target.js" />
+    <Content Include="node_modules\ws\lib\extension.js" />
+    <Content Include="node_modules\ws\lib\limiter.js" />
+    <Content Include="node_modules\ws\lib\permessage-deflate.js" />
+    <Content Include="node_modules\ws\lib\receiver.js" />
+    <Content Include="node_modules\ws\lib\sender.js" />
+    <Content Include="node_modules\ws\lib\stream.js" />
+    <Content Include="node_modules\ws\lib\subprotocol.js" />
+    <Content Include="node_modules\ws\lib\validation.js" />
+    <Content Include="node_modules\ws\lib\websocket-server.js" />
+    <Content Include="node_modules\ws\lib\websocket.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\bot_cati\v16\.suo" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="node_modules\.package-lock.json" />
+    <None Include="node_modules\data-uri-to-buffer\dist\index.js.map" />
+    <None Include="node_modules\data-uri-to-buffer\dist\src\index.js.map" />
+    <None Include="node_modules\data-uri-to-buffer\dist\test\test.js.map" />
+    <None Include="node_modules\data-uri-to-buffer\package.json" />
+    <None Include="node_modules\data-uri-to-buffer\README.md" />
+    <None Include="node_modules\fetch-blob\LICENSE" />
+    <None Include="node_modules\fetch-blob\package.json" />
+    <None Include="node_modules\fetch-blob\README.md" />
+    <None Include="node_modules\fetch-blob\streams.cjs" />
+    <None Include="node_modules\formdata-polyfill\LICENSE" />
+    <None Include="node_modules\formdata-polyfill\package.json" />
+    <None Include="node_modules\formdata-polyfill\README.md" />
+    <None Include="node_modules\node-domexception\.history\package_20210527203733.json" />
+    <None Include="node_modules\node-domexception\.history\package_20210527203825.json" />
+    <None Include="node_modules\node-domexception\.history\package_20210527204621.json" />
+    <None Include="node_modules\node-domexception\.history\package_20210527204913.json" />
+    <None Include="node_modules\node-domexception\.history\package_20210527204925.json" />
+    <None Include="node_modules\node-domexception\.history\package_20210527205145.json" />
+    <None Include="node_modules\node-domexception\.history\package_20210527205156.json" />
+    <None Include="node_modules\node-domexception\.history\README_20210527203617.md" />
+    <None Include="node_modules\node-domexception\.history\README_20210527212714.md" />
+    <None Include="node_modules\node-domexception\.history\README_20210527213345.md" />
+    <None Include="node_modules\node-domexception\.history\README_20210527213411.md" />
+    <None Include="node_modules\node-domexception\.history\README_20210527213803.md" />
+    <None Include="node_modules\node-domexception\.history\README_20210527214323.md" />
+    <None Include="node_modules\node-domexception\.history\README_20210527214408.md" />
+    <None Include="node_modules\node-domexception\LICENSE" />
+    <None Include="node_modules\node-domexception\package.json" />
+    <None Include="node_modules\node-domexception\README.md" />
+    <None Include="node_modules\node-fetch\LICENSE.md" />
+    <None Include="node_modules\node-fetch\package.json" />
+    <None Include="node_modules\node-fetch\README.md" />
+    <None Include="node_modules\tmi.js\LICENSE" />
+    <None Include="node_modules\tmi.js\node_modules\node-fetch\lib\index.mjs" />
+    <None Include="node_modules\tmi.js\node_modules\node-fetch\LICENSE.md" />
+    <None Include="node_modules\tmi.js\node_modules\node-fetch\package.json" />
+    <None Include="node_modules\tmi.js\node_modules\node-fetch\README.md" />
+    <None Include="node_modules\tmi.js\package.json" />
+    <None Include="node_modules\tmi.js\README.md" />
+    <None Include="node_modules\tr46\.npmignore" />
+    <None Include="node_modules\tr46\lib\.gitkeep" />
+    <None Include="node_modules\tr46\lib\mappingTable.json" />
+    <None Include="node_modules\tr46\package.json" />
+    <None Include="node_modules\web-streams-polyfill\CHANGELOG.md" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es2018.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es2018.min.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es2018.mjs" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es2018.mjs.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es6.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es6.min.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es6.mjs" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.es6.mjs.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.min.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.mjs" />
+    <None Include="node_modules\web-streams-polyfill\dist\polyfill.mjs.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.es2018.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.es2018.mjs" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.es2018.mjs.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.es6.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.es6.mjs" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.es6.mjs.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.js.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.mjs" />
+    <None Include="node_modules\web-streams-polyfill\dist\ponyfill.mjs.map" />
+    <None Include="node_modules\web-streams-polyfill\dist\types\tsdoc-metadata.json" />
+    <None Include="node_modules\web-streams-polyfill\es2018\package.json" />
+    <None Include="node_modules\web-streams-polyfill\es6\package.json" />
+    <None Include="node_modules\web-streams-polyfill\LICENSE" />
+    <None Include="node_modules\web-streams-polyfill\package.json" />
+    <None Include="node_modules\web-streams-polyfill\ponyfill\es2018\package.json" />
+    <None Include="node_modules\web-streams-polyfill\ponyfill\es6\package.json" />
+    <None Include="node_modules\web-streams-polyfill\ponyfill\package.json" />
+    <None Include="node_modules\web-streams-polyfill\README.md" />
+    <None Include="node_modules\webidl-conversions\LICENSE.md" />
+    <None Include="node_modules\webidl-conversions\package.json" />
+    <None Include="node_modules\webidl-conversions\README.md" />
+    <None Include="node_modules\whatwg-url\package.json" />
+    <None Include="node_modules\whatwg-url\README.md" />
+    <None Include="node_modules\ws\LICENSE" />
+    <None Include="node_modules\ws\package.json" />
+    <None Include="node_modules\ws\README.md" />
+    <None Include="node_modules\ws\wrapper.mjs" />
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="node_modules\data-uri-to-buffer\dist\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\data-uri-to-buffer\dist\src\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\data-uri-to-buffer\dist\test\test.d.ts" />
+    <TypeScriptCompile Include="node_modules\data-uri-to-buffer\src\index.ts" />
+    <TypeScriptCompile Include="node_modules\fetch-blob\file.d.ts" />
+    <TypeScriptCompile Include="node_modules\fetch-blob\from.d.ts" />
+    <TypeScriptCompile Include="node_modules\fetch-blob\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\formdata-polyfill\esm.min.d.ts" />
+    <TypeScriptCompile Include="node_modules\node-fetch\%40types\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\web-streams-polyfill\dist\types\polyfill.d.ts" />
+    <TypeScriptCompile Include="node_modules\web-streams-polyfill\dist\types\ts3.6\polyfill.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
